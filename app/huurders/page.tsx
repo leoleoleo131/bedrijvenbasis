@@ -22,7 +22,7 @@ export default function HuurderPage() {
             {actief.map(h => (
               <div key={h.naam} className="flex flex-col items-center gap-3">
                 <div className="relative h-16 w-full">
-                  <Image src={h.logo} alt={h.naam} fill className="object-contain" />
+                  <Image src={h.logo} alt={h.naam} fill className="object-contain grayscale hover:grayscale-0 transition-[filter] duration-200" />
                 </div>
                 <span className="text-sm font-medium text-center">{h.naam}</span>
               </div>
