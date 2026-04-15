@@ -35,7 +35,7 @@ Een dagkantoor is niet alleen een bureau met een stoel. Het is een volledig ande
 
 ## De voordelen van een flexibele werkplek
 
-Niet iedereen wil of kan volledige kantoorruimte huren. Daarom is een **[dagkantoor](https://bedrijvenbasis.nl/dagkantoor/)** zo waardevol. Je boekt per dag, per week of naar behoefte. Maandag en woensdag op kantoor, dinsdag en donderdag thuis, en vrijdag kan je kiezen.
+Niet iedereen wil of kan volledige kantoorruimte huren. Daarom is een **[dagkantoor](https://bedrijvenbasis.nl/kantoren/)** zo waardevol. Je boekt per dag, per week of naar behoefte. Maandag en woensdag op kantoor, dinsdag en donderdag thuis, en vrijdag kan je kiezen.
 
 Dit geeft je het beste van beide werelden: de focus van kantoorwerk en de flexibiliteit van thuiswerk. Perfecte voor ZZP'ers met wisselende agenda's of ouders die soms thuis moeten zijn.
 
@@ -77,7 +77,7 @@ Veel ondernemers in de regio (van Sneek tot Heerenveen) ontdekken dit. Ze starte
 
 De Basis in Leeuwarden biedt exact wat jij nodig hebt. All-inclusive dag- en kantoorplekken, zonder gedoe. Geen verborgen kosten, geen rare servicebijdragen.
 
-Klaar om je productiviteit terug te krijgen? **[Kijk hier wat een dagkantoor kost](https://bedrijvenbasis.nl/dagkantoor/)** of **[neem contact op met ons](https://bedrijvenbasis.nl/contact/)** voor een rondleiding.
+Klaar om je productiviteit terug te krijgen? **[Kijk hier wat een dagkantoor kost](https://bedrijvenbasis.nl/kantoren/)** of **[neem contact op met ons](https://bedrijvenbasis.nl/contact/)** voor een rondleiding.
 
 ---
 
