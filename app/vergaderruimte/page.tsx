@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 }
 
 const dagdelen = [
-  { naam: 'Ochtend', tijd: '08:00 – 12:00' },
+  { naam: 'Vroege ochtend', tijd: '08:00 – 10:00' },
+  { naam: 'Late ochtend', tijd: '10:00 – 12:00' },
   { naam: 'Begin middag', tijd: '12:00 – 15:00' },
   { naam: 'Namiddag', tijd: '15:00 – 17:00' },
   { naam: 'Hele middag', tijd: '12:00 – 17:00' },

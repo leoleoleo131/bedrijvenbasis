@@ -35,22 +35,22 @@ export default function Header() {
       <header
         className={`mx-auto max-w-[1140px] rounded-xl transition-all duration-300 ${
           scrolled
-            ? 'bg-black/30 backdrop-blur-xl shadow-lg border border-white/10'
-            : 'bg-black/20 backdrop-blur-xl border border-white/10'
+            ? 'bg-white/85 backdrop-blur-xl shadow-lg border border-white/60'
+            : 'bg-white/65 backdrop-blur-xl shadow-sm border border-white/40'
         }`}
       >
-        <div className="flex items-center justify-between h-14 px-6">
-          <Link href="/" className="flex-shrink-0 py-1">
-            <Image src="/images/basis_logo_white.svg" alt="de Basis" width={115} height={38} priority />
+        <div className="flex items-center justify-between h-14 px-4">
+          <Link href="/" className="flex-shrink-0 px-3 py-2">
+            <Image src="/images/basis_logo.svg" alt="de Basis" width={115} height={38} priority />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-5">
+          <nav className="hidden lg:flex items-center gap-5 pr-2">
             {navLinks.map(link => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                className="text-sm font-medium text-black/70 hover:text-black transition-colors"
               >
                 {link.label}
               </Link>
@@ -65,7 +65,7 @@ export default function Header() {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden p-1 text-white/80 hover:text-white transition-colors"
+            className="lg:hidden p-2 mr-1 text-black/70 hover:text-black transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Menu openen"
           >
@@ -96,11 +96,11 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="fixed top-0 right-0 h-full w-3/4 z-50 bg-black/70 backdrop-blur-xl border-l border-white/10 flex flex-col px-8 pt-20 pb-8"
+              className="fixed top-0 right-0 h-full w-3/4 z-50 bg-white/80 backdrop-blur-xl border-l border-black/10 flex flex-col px-8 pt-20 pb-8"
             >
               {/* Close button */}
               <button
-                className="absolute top-4 right-5 text-white/70 hover:text-white transition-colors"
+                className="absolute top-4 right-5 text-black/50 hover:text-black transition-colors"
                 onClick={() => setOpen(false)}
                 aria-label="Menu sluiten"
               >
@@ -119,7 +119,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className="block text-base font-medium text-white/80 hover:text-white py-3 border-b border-white/10 transition-colors"
+                      className="block text-base font-medium text-black/70 hover:text-black py-3 border-b border-black/10 transition-colors"
                     >
                       {link.label}
                     </Link>
