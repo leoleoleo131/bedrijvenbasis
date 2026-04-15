@@ -54,8 +54,8 @@ export default function OverDeBasisPage() {
       {/* Hero image */}
       <section className="relative h-64 md:h-96">
         <Image
-          src="/images/office_1.jpg"
-          alt="Bedrijfsverzamelgebouw de Basis Leeuwarden"
+          src="/images/pand.webp"
+          alt="Bedrijfsverzamelgebouw de Basis Leeuwarden exterieur"
           fill
           className="object-cover"
           priority
