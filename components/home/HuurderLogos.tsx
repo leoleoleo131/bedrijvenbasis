@@ -7,7 +7,7 @@ export default function HuurderLogos() {
     <section className="py-12 bg-surface">
       <div className="container-basis">
         <p className="text-center text-sm font-medium text-muted uppercase tracking-wider mb-8">
-          Meer dan 30 bedrijven kozen voor de Basis
+          Meer dan 20 bedrijven kozen voor de Basis
         </p>
         <div className="flex flex-wrap justify-center items-center gap-10">
           {actief.map(h => (

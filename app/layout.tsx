@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'Bedrijfsverzamelgebouw de Basis Leeuwarden',
     template: '%s | de Basis',
   },
-  description: 'Kantoorruimte huren in Leeuwarden. Flexibele contracten, all-inclusive prijzen, gratis parkeren. Meer dan 30 bedrijven kozen voor de Basis.',
+  description: 'Kantoorruimte huren in Leeuwarden. Flexibele contracten, all-inclusive prijzen, gratis parkeren. Meer dan 20 bedrijven kozen voor de Basis.',
   openGraph: {
     images: ['/images/post_headerfoto11.jpg'],
     locale: 'nl_NL',

@@ -5,7 +5,7 @@ import ContactCta from '@/components/home/ContactCta'
 
 export const metadata: Metadata = {
   title: 'Onze huurders | de Basis Leeuwarden',
-  description: 'Meer dan 30 bedrijven zijn gevestigd op Bedrijfsverzamelgebouw de Basis in Leeuwarden.',
+  description: 'Meer dan 20 bedrijven zijn gevestigd op Bedrijfsverzamelgebouw de Basis in Leeuwarden.',
 }
 
 export default function HuurderPage() {
@@ -16,7 +16,7 @@ export default function HuurderPage() {
         <div className="container-basis">
           <h1 className="text-4xl font-bold mb-4">Onze huurders</h1>
           <p className="text-muted max-w-xl mb-12">
-            Meer dan 30 bedrijven — van IT tot marketing, van coaches tot consultants — zijn thuis op de Basis.
+            Meer dan 20 bedrijven — van IT tot marketing, van coaches tot consultants — zijn thuis op de Basis.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {actief.map(h => (

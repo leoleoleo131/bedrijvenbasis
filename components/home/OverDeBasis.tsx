@@ -9,7 +9,7 @@ export default function OverDeBasis() {
           <h2 className="text-3xl font-bold mb-4">Meer dan een kantoor — een community</h2>
           <p className="text-muted mb-4">
             De Basis is een plek waar ondernemers elkaar ontmoeten, samenwerken en groeien.
-            Meer dan 30 bedrijven van allerlei sectoren zijn hier gevestigd.
+            Meer dan 20 bedrijven van allerlei sectoren zijn hier gevestigd.
           </p>
           <p className="text-muted mb-8">
             Gelegen aan de Mr. P.J. Troelstraweg 149 in Leeuwarden — vlakbij het centrum en

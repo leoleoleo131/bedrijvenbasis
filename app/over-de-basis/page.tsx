@@ -159,7 +159,7 @@ export default function OverDeBasisPage() {
         <div className="container-basis max-w-3xl text-center">
           <h2 className="text-2xl font-bold mb-4">Onze huurders</h2>
           <p className="text-muted">
-            Meer dan 30 bedrijven vertrouwen op de Basis. Van IT-bedrijven en consultants tot
+            Meer dan 20 bedrijven vertrouwen op de Basis. Van IT-bedrijven en consultants tot
             marketingbureaus, coaches en startups. Ze werken hier omdat ze kunnen groeien zonder lange
             contracten, samenwerken met andere gemotiveerde ondernemers en community voelen.
           </p>

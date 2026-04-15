@@ -66,7 +66,7 @@ export default function KantorenPage() {
               'Maandelijks opzegbaar — geen lange binding',
               'Gemeubileerd beschikbaar',
               '24/7 toegang met eigen sleutel',
-              'Sterke community van 30+ ondernemers',
+              'Sterke community van 20+ ondernemers',
             ].map(item => (
               <li key={item} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />

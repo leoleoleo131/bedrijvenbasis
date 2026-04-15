@@ -18,7 +18,7 @@ export default function Hero() {
           all-inclusive, flexibel
         </h1>
         <p className="text-lg text-white/80 max-w-xl mb-8">
-          Meer dan 30 bedrijven kozen al voor de Basis. Flexibel contract, all-inclusive prijs, gratis parkeren en 24/7 toegang.
+          Meer dan 20 bedrijven kozen al voor de Basis. Flexibel contract, all-inclusive prijs, gratis parkeren en 24/7 toegang.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button href="/kantoren/" variant="primary">Bekijk beschikbare kantoren</Button>

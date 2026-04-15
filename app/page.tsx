@@ -7,10 +7,11 @@ import OverDeBasis from '@/components/home/OverDeBasis'
 import HuurderLogos from '@/components/home/HuurderLogos'
 import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
+import Testimonials from '@/components/home/Testimonials'
 
 export const metadata: Metadata = {
   title: 'Kantoorruimte huren Leeuwarden | Bedrijfsverzamelgebouw de Basis',
-  description: 'Kantoorruimte huren in Leeuwarden. All-inclusive, flexibel maandelijks contract, gratis parkeren & WiFi. Meer dan 30 bedrijven kozen voor de Basis.',
+  description: 'Kantoorruimte huren in Leeuwarden. All-inclusive, flexibel maandelijks contract, gratis parkeren & WiFi. Meer dan 20 bedrijven kozen voor de Basis.',
 }
 
 const faqItems = [
@@ -36,7 +37,7 @@ const faqItems = [
   },
   {
     vraag: 'Hoeveel bedrijven zitten er op de Basis?',
-    antwoord: 'Meer dan 30 bedrijven zijn gevestigd op de Basis — van IT-bedrijven, consultants en coaches tot marketingbureaus en ZZP\'ers uit heel Friesland.',
+    antwoord: 'Meer dan 20 bedrijven zijn gevestigd op de Basis — van IT-bedrijven, consultants en coaches tot marketingbureaus en ZZP\'ers uit heel Friesland.',
   },
 ]
 
@@ -60,6 +61,7 @@ export default function HomePage() {
       <VergaderruimteTeaser />
       <OverDeBasis />
       <HuurderLogos />
+      <Testimonials />
       <Faq items={faqItems} />
       <ContactCta />
     </>
