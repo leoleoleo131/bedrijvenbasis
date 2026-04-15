@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 
 export const metadata: Metadata = {
-  title: 'Blog | de Basis Leeuwarden',
+  title: 'Blog',
   description: 'Tips en inspiratie voor ondernemers in Leeuwarden. Blog van Bedrijfsverzamelgebouw de Basis.',
 }
 

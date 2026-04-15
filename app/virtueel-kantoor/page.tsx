@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import ContactCta from '@/components/home/ContactCta'
+import Faq from '@/components/ui/Faq'
 
 export const metadata: Metadata = {
-  title: 'Virtueel Kantoor Leeuwarden | de Basis',
-  description: 'Zakelijk postadres in Leeuwarden zonder fysieke ruimte. Ideaal voor thuiswerkers, freelancers en online bedrijven.',
+  title: 'Virtueel Kantoor Leeuwarden | KVK-geschikt vanaf €39/mnd',
+  description: 'Zakelijk postadres in Leeuwarden zonder fysieke werkruimte. KVK-geschikt, maandelijks opzegbaar. Vanaf €39/mnd. Binnen één werkdag actief.',
+  alternates: { canonical: 'https://www.bedrijvenbasis.nl/virtueel-kantoor/' },
 }
 
 const plannen = [
@@ -12,8 +14,8 @@ const plannen = [
     prijs: '€39/maand',
     punten: [
       'Eigen zakelijk postadres (KVK-geschikt)',
-      'Post wordt gesorteerd en veilig opgeborgen in je postkluis',
-      'Je haalt post op tijdens openingstijden (ma–vr 08:30–17:00)',
+      'Post gesorteerd en opgeborgen in je postkluis',
+      'Post ophalen tijdens openingstijden (ma–vr 08:00–17:00)',
       'Gratis WiFi en gebruik van openbare werkplekken',
       'Maandelijks opzegbaar',
       'Ideaal als je in de buurt woont',
@@ -24,55 +26,89 @@ const plannen = [
     prijs: '€76/maand',
     punten: [
       'Eigen zakelijk postadres (KVK-geschikt)',
-      'Post wordt gesorteerd en om de week naar je opgestuurd',
+      'Post gesorteerd en om de week naar je opgestuurd',
       'Gratis WiFi en gebruik van openbare werkplekken',
       'Maandelijks opzegbaar',
+      'Reclame filteren op verzoek',
       'Ideaal als je verder weg woont',
-      'We kunnen ook reclame voor je filteren',
     ],
   },
 ]
 
 const voordelen = [
-  'Scheiding privé en zakelijk – Je thuisadres blijft privé',
-  'Professionele uitstraling – Een kantorengebouw ziet er professioneler uit dan thuis',
-  'KVK-geschikt – Het adres voldoet volledig aan de eisen van de Kamer van Koophandel',
-  'Flexibel werken – Jij bepaalt waar je werkt: thuis, café, dagkantoor of openbare ruimte',
+  'Scheiding privé en zakelijk — je thuisadres blijft privé',
+  'Professionele uitstraling — een kantorengebouw ziet er professioneler uit dan thuis',
+  'KVK-geschikt — het adres voldoet volledig aan de eisen van de Kamer van Koophandel',
+  'Flexibel werken — jij bepaalt waar je werkt: thuis, onderweg of op een werkplek',
 ]
 
 const doelgroep = [
-  'Thuiswerkers – Scheiding privé en zakelijk adres',
-  'Freelancers – Professioneel zakelijk postadres',
-  'Startups – Laagdrempelig kantoorgebouw adres',
-  'E-commerce – Post centraal geregeld',
-  'Coaches – Adres voor inschrijving, klanten ontvangen op afspraak',
-  'Consultants – Flexibel werken met professioneel imago',
-  'Online bedrijven – Zakelijk postadres voor rechtmatigheid',
+  'Thuiswerkers — scheiding privé en zakelijk adres',
+  'Freelancers — professioneel zakelijk postadres',
+  'Startups — laagdrempelig kantooradres zonder vaste kosten',
+  'E-commerce — post centraal geregeld',
+  'Coaches — adres voor inschrijving, klanten ontvangen op afspraak',
+  'Consultants — flexibel werken met professioneel imago',
+  'Online bedrijven — zakelijk postadres voor rechtmatigheid',
 ]
+
+const faqItems = [
+  {
+    vraag: 'Wat is een virtueel kantoor precies?',
+    antwoord: 'Een virtueel kantoor geeft je een zakelijk postadres zonder dat je een vaste werkruimte huurt. Je bedrijf staat officieel ingeschreven op het adres van de Basis (Mr. P.J. Troelstraweg 149, 8919AA Leeuwarden). Je werkt zelf waar je wilt — thuis, onderweg of elders.',
+  },
+  {
+    vraag: 'Is het adres geschikt voor KVK-inschrijving?',
+    antwoord: 'Ja. Het adres is volledig KVK-geschikt. Je kunt je bedrijf officieel inschrijven bij de Kamer van Koophandel op Mr. P.J. Troelstraweg 149, 8919AA Leeuwarden. Het adres voldoet aan alle vereisten.',
+  },
+  {
+    vraag: 'Hoe snel is het virtueel kantoor actief?',
+    antwoord: 'Binnen één werkdag. Stuur ons je bedrijfsnaam, KVK-nummer en contactgegevens, en je bent klaar om te starten. Geen lange procedures of wachttijden.',
+  },
+  {
+    vraag: 'Wat kost een virtueel kantoor bij de Basis?',
+    antwoord: 'Post ophalen kost €39 per maand. Post verzenden (we sturen je post om de week op) kost €76 per maand. Beide opties zijn maandelijks opzegbaar zonder inschrijfkosten.',
+  },
+  {
+    vraag: 'Kan ik ook de vergaderruimte gebruiken als virtueel kantoor huurder?',
+    antwoord: 'Ja. Als virtueel kantoor huurder kun je gebruik maken van de vergaderruimte (apart te reserveren) en de openbare werkplekken met gratis WiFi in het gebouw.',
+  },
+  {
+    vraag: 'Blijft mijn privéadres echt privé?',
+    antwoord: 'Ja. Zodra je een virtueel kantoor afneemt bij de Basis, staat je bedrijf ingeschreven op ons adres. Je privéadres hoeft niet publiek te zijn voor de KVK of voor klanten.',
+  },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(item => ({
+    '@type': 'Question',
+    name: item.vraag,
+    acceptedAnswer: { '@type': 'Answer', text: item.antwoord },
+  })),
+}
 
 export default function VirtueelKantoorPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       {/* Intro */}
       <section className="section-padding bg-white">
         <div className="container-basis max-w-3xl">
-          <h1 className="text-4xl font-bold mb-6">Virtueel Kantoor Leeuwarden</h1>
+          <h1 className="text-4xl font-bold mb-4">Virtueel Kantoor Leeuwarden</h1>
           <p className="text-muted text-lg mb-4">
-            Heb je geen vaste werkruimte nodig, maar wil je wel een zakelijk postadres? Virtueel kantoor
-            op de Basis is ideaal voor thuiswerkers, freelancers, online bedrijven en flexwerkers.
-          </p>
-          <p className="text-muted mb-4">
-            Je krijgt een professioneel bedrijfsadres, wij sorteren je post, en je hebt gratis toegang tot
-            onze openbare ruimtes en WiFi. Al voor €39 per maand.
+            Een zakelijk postadres in Leeuwarden zonder vaste werkruimte. KVK-geschikt, professioneel,
+            maandelijks opzegbaar. Al vanaf <strong>€39 per maand</strong>.
           </p>
           <p className="text-muted mb-8">
-            Virtueel kantoor betekent dat jij met je bedrijf officieel staat ingeschreven op het adres van
-            de Basis, in plaats van op je privéadres.
+            Je bedrijf staat officieel ingeschreven op het adres van de Basis. Wij sorteren je post —
+            jij werkt waar je wilt.
           </p>
 
-          {/* Voordelen */}
           <h2 className="text-2xl font-bold mb-4">De voordelen</h2>
-          <ul className="space-y-2 text-sm text-muted mb-8">
+          <ul className="space-y-2 text-sm text-muted">
             {voordelen.map(v => (
               <li key={v} className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5" />
@@ -86,10 +122,18 @@ export default function VirtueelKantoorPage() {
       {/* Plannen */}
       <section className="section-padding bg-surface">
         <div className="container-basis">
-          <h2 className="text-2xl font-bold mb-8 text-center">Twee serviceplannen</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">Kies je plan</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {plannen.map(plan => (
-              <div key={plan.naam} className="bg-white rounded-card shadow-card p-8">
+            {plannen.map((plan, i) => (
+              <div
+                key={plan.naam}
+                className={`bg-white rounded-card shadow-card p-8 ${i === 0 ? 'ring-2 ring-primary' : ''}`}
+              >
+                {i === 0 && (
+                  <span className="inline-block bg-primary text-xs font-semibold px-2 py-1 rounded mb-4">
+                    Meest gekozen
+                  </span>
+                )}
                 <div className="flex items-baseline justify-between mb-6">
                   <h3 className="text-xl font-bold">{plan.naam}</h3>
                   <span className="text-primary font-semibold">{plan.prijs}</span>
@@ -106,7 +150,7 @@ export default function VirtueelKantoorPage() {
             ))}
           </div>
           <p className="text-center text-sm text-muted mt-6">
-            Extra optie: reclame filteren voordat we versturen — geen extra kosten.
+            Beide opties zijn maandelijks opzegbaar — geen inschrijfkosten.
           </p>
         </div>
       </section>
@@ -115,7 +159,7 @@ export default function VirtueelKantoorPage() {
       <section className="section-padding bg-white">
         <div className="container-basis max-w-3xl">
           <h2 className="text-2xl font-bold mb-6">Wie kiest voor virtueel kantoor?</h2>
-          <ul className="space-y-2 text-sm text-muted">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-muted">
             {doelgroep.map(d => (
               <li key={d} className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5" />
@@ -125,15 +169,16 @@ export default function VirtueelKantoorPage() {
           </ul>
 
           <div className="mt-10 p-6 bg-surface rounded-card">
-            <h3 className="font-bold mb-2">Snel geregeld</h3>
+            <h3 className="font-bold mb-2">Binnen één werkdag actief</h3>
             <p className="text-sm text-muted">
-              Binnen één werkdag actief. We hebben je bedrijfsgegevens nodig (naam, KVK-nummer,
-              contactgegevens) en je bent klaar. Maandelijks opzegbaar, geen lange contracten.
+              Stuur ons je bedrijfsnaam, KVK-nummer en contactgegevens — je virtueel kantoor is
+              dezelfde of volgende werkdag actief. Maandelijks opzegbaar, geen lange contracten.
             </p>
           </div>
         </div>
       </section>
 
+      <Faq items={faqItems} title="Veelgestelde vragen over virtueel kantoor" />
       <ContactCta />
     </>
   )

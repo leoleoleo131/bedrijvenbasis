@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white min-h-[calc(100vh-4rem)]">
       <div className="container-basis">
         <h1 className="text-4xl font-bold mb-10">Contact</h1>
 
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
               <div>
                 <p className="font-medium mb-1">Openingstijden</p>
-                <p className="text-muted">Maandag – vrijdag: 08:30 – 17:00</p>
+                <p className="text-muted">Maandag – vrijdag: 08:00 – 17:00</p>
               </div>
             </div>
           </div>
