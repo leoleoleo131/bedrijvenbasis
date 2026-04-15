@@ -39,8 +39,8 @@ export default function Header() {
             : 'bg-white/65 backdrop-blur-xl shadow-sm border border-white/40'
         }`}
       >
-        <div className="flex items-center justify-between h-14 px-4">
-          <Link href="/" className="flex-shrink-0 px-3 py-2">
+        <div className="flex items-center justify-between h-16 px-3">
+          <Link href="/" className="flex-shrink-0 px-5 py-2">
             <Image src="/images/basis_logo.svg" alt="de Basis" width={115} height={38} priority />
           </Link>
 

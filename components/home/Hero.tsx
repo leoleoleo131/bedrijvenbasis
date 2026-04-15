@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative h-[600px] md:h-[680px] flex items-center">
       <Image
-        src="/images/gebouw_1.jpg"
+        src="/images/post_headerfoto11.jpg"
         alt="Bedrijfsverzamelgebouw de Basis Leeuwarden"
         fill
         className="object-cover"

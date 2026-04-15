@@ -19,7 +19,7 @@ export default function OverDeBasis() {
         </div>
         <div className="relative h-72 md:h-96 rounded-card overflow-hidden">
           <Image
-            src="/images/impressie3.jpg"
+            src="/images/office_1.jpg"
             alt="Gang de Basis met logo op de vloer"
             fill
             className="object-cover"
