@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-black bg-white;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  h1, h2, h3, h4 {
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .container-basis {
+    @apply max-w-container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+}
