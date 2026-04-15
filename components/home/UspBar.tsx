@@ -1,9 +1,9 @@
 import { Wifi, CalendarDays, ParkingSquare, KeyRound } from 'lucide-react'
 
 const usps = [
-  { icon: Wifi, title: 'All-inclusive', text: 'WiFi, stroom, schoonmaak en parkeren inbegrepen' },
-  { icon: CalendarDays, title: 'Flexibel contract', text: 'Maandelijks opzegbaar, geen lange binding' },
-  { icon: ParkingSquare, title: 'Gratis parkeren', text: 'Veel ruimte rondom het gebouw' },
+  { icon: Wifi, title: 'All-inclusive', text: 'WiFi, energie, schoonmaak, heffingen — alles zit erin' },
+  { icon: CalendarDays, title: 'Flexibel contract', text: 'Jaarcontract of flexibel, jij kiest' },
+  { icon: ParkingSquare, title: 'Gratis parkeren', text: 'Ruim parkeren + laadpalen beschikbaar' },
   { icon: KeyRound, title: '24/7 toegang', text: 'Met eigen sleutel altijd naar binnen' },
 ]
 

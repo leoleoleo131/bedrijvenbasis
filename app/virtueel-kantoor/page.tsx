@@ -3,34 +3,36 @@ import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
 
 export const metadata: Metadata = {
-  title: 'Virtueel Kantoor Leeuwarden | KVK-geschikt vanaf €39/mnd',
-  description: 'Zakelijk postadres in Leeuwarden zonder fysieke werkruimte. KVK-geschikt, maandelijks opzegbaar. Vanaf €39/mnd. Binnen één werkdag actief.',
+  title: 'Virtueel Kantoor Leeuwarden | KVK-geschikt vanaf €49/mnd',
+  description: 'Zakelijk postadres in Leeuwarden zonder fysieke werkruimte. KVK-geschikt, post inscannen en doormailen. Vanaf €49/mnd. Binnen één werkdag actief.',
   alternates: { canonical: 'https://www.bedrijvenbasis.nl/virtueel-kantoor/' },
 }
 
 const plannen = [
   {
     naam: 'Post ophalen',
-    prijs: '€39/maand',
+    prijs: '€49/mnd',
+    badge: 'Meest gekozen',
+    info: 'Minimaal 1 jaar, daarna per kwartaal opzegbaar. Betaling per kwartaal.',
     punten: [
       'Eigen zakelijk postadres (KVK-geschikt)',
       'Post gesorteerd en opgeborgen in je postkluis',
       'Post ophalen tijdens openingstijden (ma–vr 08:00–17:00)',
       'Gratis WiFi en gebruik van openbare werkplekken',
-      'Maandelijks opzegbaar',
-      'Ideaal als je in de buurt woont',
+      'Ideaal als je in de buurt woont of werkt',
     ],
   },
   {
-    naam: 'Post verzenden',
-    prijs: '€76/maand',
+    naam: 'Inscannen & doormailen',
+    prijs: '€69/mnd',
+    badge: null,
+    info: 'Minimaal 1 jaar, daarna per kwartaal opzegbaar. Betaling per kwartaal.',
     punten: [
       'Eigen zakelijk postadres (KVK-geschikt)',
-      'Post gesorteerd en om de week naar je opgestuurd',
+      'Post direct ingescand en doorgestuurd naar je e-mail',
       'Gratis WiFi en gebruik van openbare werkplekken',
-      'Maandelijks opzegbaar',
       'Reclame filteren op verzoek',
-      'Ideaal als je verder weg woont',
+      'Ideaal als je verder weg woont of veel onderweg bent',
     ],
   },
 ]
@@ -67,7 +69,7 @@ const faqItems = [
   },
   {
     vraag: 'Wat kost een virtueel kantoor bij de Basis?',
-    antwoord: 'Post ophalen kost €39 per maand. Post verzenden (we sturen je post om de week op) kost €76 per maand. Beide opties zijn maandelijks opzegbaar zonder inschrijfkosten.',
+    antwoord: 'Post ophalen kost €49 per maand — je haalt zelf je post op tijdens openingstijden. Inscannen & doormailen kost €69 per maand — wij scannen je post in en sturen hem direct naar je e-mail. Beide opties hebben een minimumlooptijd van 1 jaar, daarna per kwartaal opzegbaar. Betaling gaat per kwartaal vooruit.',
   },
   {
     vraag: 'Kan ik ook de vergaderruimte gebruiken als virtueel kantoor huurder?',
@@ -99,11 +101,11 @@ export default function VirtueelKantoorPage() {
         <div className="container-basis max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">Virtueel Kantoor Leeuwarden</h1>
           <p className="text-muted text-lg mb-4">
-            Een zakelijk postadres in Leeuwarden zonder vaste werkruimte. KVK-geschikt, professioneel,
-            maandelijks opzegbaar. Al vanaf <strong>€39 per maand</strong>.
+            Een zakelijk postadres in Leeuwarden zonder vaste werkruimte. KVK-geschikt, professioneel.
+            Al vanaf <strong>€49 per maand</strong>.
           </p>
           <p className="text-muted mb-8">
-            Je bedrijf staat officieel ingeschreven op het adres van de Basis. Wij sorteren je post —
+            Je bedrijf staat officieel ingeschreven op het adres van de Basis. Wij regelen je post —
             jij werkt waar je wilt.
           </p>
 
@@ -122,23 +124,25 @@ export default function VirtueelKantoorPage() {
       {/* Plannen */}
       <section className="section-padding bg-surface">
         <div className="container-basis">
-          <h2 className="text-2xl font-bold mb-8 text-center">Kies je plan</h2>
+          <h2 className="text-2xl font-bold mb-2 text-center">Kies je plan</h2>
+          <p className="text-sm text-muted text-center mb-8">Minimaal 1 jaar, daarna per kwartaal opzegbaar — betaling per kwartaal vooruit.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {plannen.map((plan, i) => (
               <div
                 key={plan.naam}
-                className={`bg-white rounded-card shadow-card p-8 ${i === 0 ? 'ring-2 ring-primary' : ''}`}
+                className={`bg-white rounded-card shadow-card p-8 flex flex-col ${i === 0 ? 'ring-2 ring-primary' : ''}`}
               >
-                {i === 0 && (
-                  <span className="inline-block bg-primary text-xs font-semibold px-2 py-1 rounded mb-4">
-                    Meest gekozen
+                {plan.badge && (
+                  <span className="inline-block bg-primary text-xs font-semibold px-2 py-1 rounded mb-4 w-fit">
+                    {plan.badge}
                   </span>
                 )}
-                <div className="flex items-baseline justify-between mb-6">
+                <div className="flex items-baseline justify-between mb-2">
                   <h3 className="text-xl font-bold">{plan.naam}</h3>
                   <span className="text-primary font-semibold">{plan.prijs}</span>
                 </div>
-                <ul className="space-y-3 text-sm text-muted">
+                <p className="text-xs text-muted mb-6">{plan.info}</p>
+                <ul className="space-y-3 text-sm text-muted flex-1">
                   {plan.punten.map(p => (
                     <li key={p} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5" />
@@ -149,9 +153,11 @@ export default function VirtueelKantoorPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-muted mt-6">
-            Beide opties zijn maandelijks opzegbaar — geen inschrijfkosten.
-          </p>
+          <div className="mt-6 max-w-4xl mx-auto">
+            <div className="bg-white rounded-card p-4 text-sm text-muted border border-black/10">
+              <strong className="text-black">Post doorsturen?</strong> Wil je je fysieke post ook per post nagestuurd krijgen? Dat is mogelijk als meerprijs van <strong>€20/mnd</strong> bovenop je gekozen plan.
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,7 +178,7 @@ export default function VirtueelKantoorPage() {
             <h3 className="font-bold mb-2">Binnen één werkdag actief</h3>
             <p className="text-sm text-muted">
               Stuur ons je bedrijfsnaam, KVK-nummer en contactgegevens — je virtueel kantoor is
-              dezelfde of volgende werkdag actief. Maandelijks opzegbaar, geen lange contracten.
+              dezelfde of volgende werkdag actief.
             </p>
           </div>
         </div>

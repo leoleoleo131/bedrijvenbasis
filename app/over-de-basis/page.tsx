@@ -40,12 +40,30 @@ const gebouwFeatures = [
 ]
 
 const onderscheid = [
-  { titel: 'Geen lange contracten', tekst: 'Maandelijks opzegbaar. Risicovrij groeien.' },
-  { titel: 'All-in-één', tekst: 'Internet, WiFi, schoonmaak, onderhoud, parkeren — alles inbegrepen.' },
-  { titel: 'Modern en schoon', tekst: 'Gerenoveerd gebouw met alle gemakken.' },
-  { titel: 'Community', tekst: 'Netwerken met andere ondernemers. Kennis delen. Groeien.' },
-  { titel: 'Flexibel', tekst: 'Kantoor, dagkantoor, vergaderruimte, virtueel kantoor — wat je nodig hebt.' },
-  { titel: 'Goed bereikbaar', tekst: 'Hart van Leeuwarden, makkelijk van Drachten, Sneek en omgeving.' },
+  {
+    titel: 'Flexibele contracten',
+    tekst: 'Standaard jaarcontract. Wil je meer vrijheid? Flexibel contract met 15% toeslag: al vanaf de eerste maand opzegbaar met 3 maanden opzegtermijn.',
+  },
+  {
+    titel: 'Echt all-in-één',
+    tekst: 'Snelle glasvezel WiFi, energie (stroom + verwarming), gemeentelijke heffingen, schoonmaak van alle algemene ruimtes en toiletten, servicekosten en beheer — alles inbegrepen. Geen verrassingen, geen extra facturen.',
+  },
+  {
+    titel: 'Modern en duurzaam',
+    tekst: 'Volledig gerenoveerd en verduurzaamd gebouw: extra isolatie, zonnepanelen, moderne airco\'s en klimaatbeheersing. Professioneel, schoon en energiezuinig.',
+  },
+  {
+    titel: 'Community',
+    tekst: 'Netwerken met andere ondernemers. Kennis delen. Groeien. Meer dan 20 bedrijven onder één dak.',
+  },
+  {
+    titel: 'Alles onder één dak',
+    tekst: 'Kantoorruimte, vergaderruimte en virtueel kantoor — allemaal op één locatie, precies wat je nodig hebt.',
+  },
+  {
+    titel: 'Goed bereikbaar',
+    tekst: 'Hart van Leeuwarden, vlakbij de A31. Makkelijk bereikbaar vanuit Drachten, Sneek, Harlingen en heel Friesland.',
+  },
 ]
 
 export default function OverDeBasisPage() {
@@ -163,6 +181,26 @@ export default function OverDeBasisPage() {
             marketingbureaus, coaches en startups. Ze werken hier omdat ze kunnen groeien zonder lange
             contracten, samenwerken met andere gemotiveerde ondernemers en community voelen.
           </p>
+        </div>
+      </section>
+
+      {/* Locatie */}
+      <section className="section-padding bg-white">
+        <div className="container-basis">
+          <h2 className="text-2xl font-bold mb-2 text-center">Hoe vind je ons?</h2>
+          <p className="text-sm text-muted text-center mb-8">Mr. P.J. Troelstraweg 149, 8919AA Leeuwarden — vlakbij de A31</p>
+          <div className="rounded-card overflow-hidden shadow-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.7!2d5.8167!3d53.2015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8ffe7b3e4a34d%3A0x1a2b3c4d5e6f7890!2sMr.%20P.J.%20Troelstraweg%20149%2C%208919%20AA%20Leeuwarden!5e0!3m2!1snl!2snl!4v1700000000000!5m2!1snl!2snl"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Locatie de Basis Leeuwarden"
+            />
+          </div>
         </div>
       </section>
 
