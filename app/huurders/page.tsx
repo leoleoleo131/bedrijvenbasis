@@ -14,10 +14,7 @@ export default function HuurderPage() {
     <>
       <section className="section-padding bg-white">
         <div className="container-basis">
-          <h1 className="text-4xl font-bold mb-4">Onze huurders</h1>
-          <p className="text-muted max-w-xl mb-12">
-            Meer dan 20 bedrijven — van IT tot marketing, van coaches tot consultants — zijn thuis op de Basis.
-          </p>
+          <h1 className="text-4xl font-bold mb-12">Alle bazen op de Basis</h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {actief.map(h => (
               <div key={h.naam} className="relative h-24 w-full overflow-hidden">
