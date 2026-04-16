@@ -4,28 +4,29 @@ import UspBar from '@/components/home/UspBar'
 import UnitsGrid from '@/components/home/UnitsGrid'
 import VergaderruimteTeaser from '@/components/home/VergaderruimteTeaser'
 import OverDeBasis from '@/components/home/OverDeBasis'
-import HuurderLogos from '@/components/home/HuurderLogos'
+import LogoCarousel from '@/components/home/LogoCarousel'
 import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
 import Testimonials from '@/components/home/Testimonials'
+import FotoGrid from '@/components/home/FotoGrid'
 
 export const metadata: Metadata = {
   title: 'Kantoorruimte huren Leeuwarden | Bedrijfsverzamelgebouw de Basis',
-  description: 'Kantoorruimte huren in Leeuwarden. All-inclusive, flexibel maandelijks contract, gratis parkeren & WiFi. Meer dan 20 bedrijven kozen voor de Basis.',
+  description: 'Kantoorruimte huren in Leeuwarden. All-inclusive, flexibel maandelijks contract, gratis parkeren & WiFi. Meer dan 25 bedrijven kozen voor de Basis.',
 }
 
 const faqItems = [
   {
     vraag: 'Welke diensten biedt de Basis?',
-    antwoord: 'De Basis biedt kantoorruimte (7–60 m²), een vergaderruimte van 35 m², virtueel kantoor en flexibele werkplekken. Alle huurprijzen zijn all-inclusive: WiFi, stroom, schoonmaak van gemeenschappelijke ruimtes en gratis parkeren zijn standaard inbegrepen.',
+    antwoord: 'De Basis biedt kantoorruimte (7–60 m²), een moderne vergaderruimte van 35 m² voor maximaal 16 personen, virtueel kantoor en flexibele werkplekken. Alle huurprijzen zijn volledig all-inclusive: WiFi, stroom, verwarming, schoonmaak van gemeenschappelijke ruimtes en toiletten, servicekosten, beheer en gratis parkeren zijn standaard inbegrepen. Geen gemeentelijke heffingen, geen extra kosten achteraf. Gewoon één vast bedrag per maand.',
   },
   {
-    vraag: 'Kan ik een kantoor op maandelijkse basis huren?',
-    antwoord: 'Ja. Alle kantoorruimtes bij de Basis zijn maandelijks opzegbaar met één maand opzegtermijn. Je zit nergens aan vast — start wanneer het uitkomt, stop wanneer je wilt.',
+    vraag: 'Kan ik de kantoorruimte maandelijks opzeggen?',
+    antwoord: 'Ja. Met ons flexibele contract ben je al vanaf de eerste maand opzegbaar — met een opzegtermijn van 3 maanden. Hiervoor betaal je een toeslag van 15% op de maandprijs. Wil je liever zekerheid? Met een standaard jaarcontract betaal je de laagste prijs zonder toeslag.',
   },
   {
     vraag: 'Zijn parkeerplaatsen gratis?',
-    antwoord: 'Ja. Rondom het gebouw zijn ruim voldoende gratis parkeerplaatsen voor huurders en bezoekers. Er is ook een fietsenstalling beschikbaar.',
+    antwoord: 'Ja. Rondom het gebouw zijn ruim voldoende gratis parkeerplaatsen voor huurders en bezoekers. Er zijn ook elektrische laadpalen aanwezig.',
   },
   {
     vraag: 'Wat is er inbegrepen in de huurprijs?',
@@ -37,7 +38,7 @@ const faqItems = [
   },
   {
     vraag: 'Hoeveel bedrijven zitten er op de Basis?',
-    antwoord: 'Meer dan 20 bedrijven zijn gevestigd op de Basis — van IT-bedrijven, consultants en coaches tot marketingbureaus en ZZP\'ers uit heel Friesland.',
+    antwoord: 'Meer dan 25 bedrijven zijn gevestigd op de Basis — van IT-bedrijven, consultants en coaches tot marketingbureaus en ZZP\'ers uit heel Friesland.',
   },
 ]
 
@@ -60,7 +61,8 @@ export default function HomePage() {
       <UnitsGrid />
       <VergaderruimteTeaser />
       <OverDeBasis />
-      <HuurderLogos />
+      <FotoGrid />
+      <LogoCarousel />
       <Testimonials />
       <Faq items={faqItems} />
       <ContactCta />

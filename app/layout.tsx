@@ -11,6 +11,10 @@ export const metadata: Metadata = {
     template: '%s | de Basis',
   },
   description: 'Kantoorruimte huren in Leeuwarden. Flexibele contracten, all-inclusive prijzen, gratis parkeren. Meer dan 20 bedrijven kozen voor de Basis.',
+  icons: {
+    icon: '/images/basis_logo.A-fav.png',
+    apple: '/images/basis_logo.A-fav.png',
+  },
   openGraph: {
     images: ['/images/post_headerfoto11.jpg'],
     locale: 'nl_NL',

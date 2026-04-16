@@ -53,7 +53,7 @@ export default function Testimonials() {
               </p>
               <div>
                 <p className="font-semibold text-sm">{r.naam}</p>
-                <p className="text-xs text-muted">{r.functie}</p>
+                <p className="text-xs text-muted">{r.Bedrijf || r.functie}</p>
               </div>
             </div>
           ))}

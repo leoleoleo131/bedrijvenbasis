@@ -11,4 +11,5 @@ export const huurders: Huurder[] = [
   { naam: 'NoardCode', logo: '/images/noardcode.png', actief: true },
   { naam: 'Krik', logo: '/images/krik.png', actief: true },
   { naam: 'CYB', logo: '/images/cyb.png', actief: true },
+  { naam: 'Flow', logo: '/images/flow1.png', actief: true },
 ]
