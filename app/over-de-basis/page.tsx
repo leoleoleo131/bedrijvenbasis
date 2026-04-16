@@ -46,7 +46,7 @@ const onderscheid = [
   },
   {
     titel: 'Echt all-in-één',
-    tekst: 'Energie (stroom + verwarming), gemeentelijke heffingen, schoonmaak van alle algemene ruimtes en toiletten, servicekosten en beheer — alles inbegrepen. Geen verrassingen, geen extra facturen.',
+    tekst: 'WiFi, energie (stroom + verwarming), gemeentelijke heffingen, schoonmaak van alle algemene ruimtes en toiletten, servicekosten en beheer — alles inbegrepen. Geen verrassingen, geen extra facturen.',
   },
   {
     titel: 'Modern en duurzaam',
