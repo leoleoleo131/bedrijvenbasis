@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const usps = [
   { icon: '⚡', label: 'Snel internet', sub: 'WiFi door het hele gebouw' },
   { icon: '☀️', label: 'Zonnepanelen', sub: 'Duurzaam pand' },
-  { icon: '❄️', label: 'Airco & warmte', sub: 'Koel in de zomer, warm in de winter' },
+  { icon: '📬', label: 'Eigen postvak', sub: 'Post centraal ontvangen en gesorteerd' },
   { icon: '🚗', label: 'Gratis parkeren', sub: 'Ruim parkeerdek + laadpalen' },
   { icon: '🌿', label: 'Buitenwerkplek', sub: 'Terras voor in de zomer' },
   { icon: '💡', label: 'LED-verlichting', sub: 'Strakke, moderne afwerking' },
