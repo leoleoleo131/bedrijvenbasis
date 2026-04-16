@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import UnitsGrid from '@/components/home/UnitsGrid'
 import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
@@ -43,7 +44,7 @@ const faqItems = [
   },
   {
     vraag: 'Wat is er inbegrepen in de huurprijs?',
-    antwoord: 'De huurprijs is volledig all-inclusive: snel internet via WiFi, elektra, verwarming, schoonmaak van gemeenschappelijke ruimtes, gratis parkeren met laadpalen en 24/7 toegang met eigen sleutel. Jaloezieen zijn aanwezig, vloeren zijn geïsoleerd en afgewerkt. Geen verborgen kosten. Let op: het internet is snel WiFi — geen glasvezel.',
+    antwoord: 'De huurprijs is volledig all-inclusive: snel internet via WiFi, elektra, verwarming, schoonmaak van publieke ruimtes, gratis parkeren met laadpalen en 24/7 toegang met eigen sleutel. Jaloezieen zijn aanwezig, vloeren zijn geïsoleerd en afgewerkt. Geen verborgen kosten.',
   },
   {
     vraag: 'Is het kantoor gemeubileerd te huren?',
@@ -51,13 +52,29 @@ const faqItems = [
   },
   {
     vraag: 'Hoe snel kan ik intrekken?',
-    antwoord: 'Doorgaans binnen 1 à 2 weken na het tekenen van het huurcontract. Wanneer de ruimte direct beschikbaar is, kan het ook sneller — zelfs op de dag van ondertekening. We sturen het contract digitaal toe; zodra jij tekent, kun je er in principe direct in. Neem contact op voor een vrijblijvende bezichtiging.',
+    antwoord: 'Is de ruimte leeg? Dan kun je er direct in. We sturen het contract digitaal toe — vaak nog dezelfde dag — en zodra jij tekent kun je aan de slag. Zit er nog een huurder in? Dan is de verwachte beschikbaarheidsdatum te zien bij de betreffende unit hierboven.',
   },
   {
     vraag: 'Kan ik ook de vergaderruimte gebruiken als kantoorhuurder?',
-    antwoord: 'Jazeker! Als kantoorhuurder bij de Basis reserveer je de vergaderruimte gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs. Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training wil organiseren of met je team wil vergaderen. Je combineert zo een betaalbare vaste werkplek met een professionele vergaderzaal wanneer je die nodig hebt.',
+    antwoord: (
+      <>
+        Jazeker! Als kantoorhuurder reserveer je de{' '}
+        <Link href="/vergaderruimte/" className="underline hover:text-black transition-colors">
+          vergaderruimte
+        </Link>{' '}
+        gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs.
+        Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training
+        wil organiseren of met je team wil vergaderen. Je combineert zo een betaalbare vaste werkplek
+        met een professionele vergaderzaal wanneer je die nodig hebt.
+      </>
+    ),
   },
 ]
+
+const faqSchemaTexts: Record<string, string> = {
+  'Kan ik ook de vergaderruimte gebruiken als kantoorhuurder?':
+    'Jazeker! Als kantoorhuurder reserveer je de vergaderruimte gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs. Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training wil organiseren of met je team wil vergaderen.',
+}
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -65,7 +82,10 @@ const faqSchema = {
   mainEntity: faqItems.map(item => ({
     '@type': 'Question',
     name: item.vraag,
-    acceptedAnswer: { '@type': 'Answer', text: item.antwoord },
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faqSchemaTexts[item.vraag] ?? (typeof item.antwoord === 'string' ? item.antwoord : ''),
+    },
   })),
 }
 
@@ -84,7 +104,7 @@ export default function KantorenPage() {
           </p>
           <ul className="space-y-2 text-sm text-muted mb-6">
             {[
-              'Alles inbegrepen: WiFi, stroom, schoonmaak, parkeren',
+              'Alles inbegrepen: WiFi, stroom, schoonmaak publieke ruimtes, parkeren',
               '24/7 toegang met eigen sleutel',
               'Gemeubileerd beschikbaar — alleen je computer mee',
               'Sterke community van 25+ ondernemers',
@@ -99,7 +119,7 @@ export default function KantorenPage() {
             <li className="flex items-start gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
               <span>
-                <strong>Jaarcontract</strong> — vaste zekerheid, gunstig tarief. Bij grotere units of meerdere units het meest gebruikelijk.
+                <strong>Jaarcontract — meest gekozen.</strong> Zekerheid voor beide partijen en na een jaar maandelijks opzegbaar met 3 maanden opzegtermijn. Bij de grootste units of meerdere units wordt een passend voorstel op maat gemaakt.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -159,7 +179,7 @@ export default function KantorenPage() {
                 fiets en bus. Gratis parkeren en elektrische laadpalen zijn aanwezig.
               </p>
               <p className="text-muted text-sm leading-relaxed mb-4">
-                De kantoren zelf zijn afgewerkt met moderne PVC beton gietvloerlook of laminaatvloer,
+                De kantoren zelf zijn afgewerkt met moderne PVC, beton gietvloerlook of laminaatvloer,
                 strakke wanden en LED-verlichting. Representatief én prettig om in te werken.
                 Er is ruimte om zelf wat op te hangen of een wand te sauzen — alles is bespreekbaar.
               </p>

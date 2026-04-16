@@ -1,10 +1,11 @@
 'use client'
 import { useState } from 'react'
+import type React from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export type FaqItem = {
   vraag: string
-  antwoord: string
+  antwoord: string | React.ReactNode
 }
 
 function FaqRow({ vraag, antwoord }: FaqItem) {
@@ -23,7 +24,7 @@ function FaqRow({ vraag, antwoord }: FaqItem) {
         />
       </button>
       {open && (
-        <p className="text-sm text-muted leading-relaxed pb-4 pr-8">{antwoord}</p>
+        <div className="text-sm text-muted leading-relaxed pb-4 pr-8">{antwoord}</div>
       )}
     </div>
   )
