@@ -1,13 +1,13 @@
 const reviews = [
   {
     naam: 'Kevin Tadema',
-    functie: 'Local Guide',
+    Bedrijf: '4Traffic',
     tekst: 'Wij hebben meerdere bedrijfsverzamelgebouwen gehad maar de Basis was verreweg de beste! Alles wordt snel opgepakt, feedback wordt serieus genomen en de verhuurder neemt echt moeite om alles mooi en in orde te houden.',
     sterren: 5,
   },
   {
     naam: 'Marcel Klaver',
-    functie: 'NoardCode',
+    Bedrijf: 'NoardCode',
     tekst: 'We zitten als NoardCode inmiddels twee jaar in de Basis. Het bevalt ons erg goed en we zijn zeer tevreden over de verhuurder. Het contact is makkelijk, snel en ze zijn altijd bereid mee te denken.',
     sterren: 5,
   },

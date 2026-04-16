@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { contact } from '@/data/contact'
 import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
+import CalBooking from '@/components/ui/CalBooking'
 
 export const metadata: Metadata = {
   title: 'Vergaderruimte huren Leeuwarden | 35m², hybride, catering',
@@ -126,32 +126,17 @@ export default function VergaderruimtePage() {
         </div>
       </section>
 
-      {/* Placeholder booking */}
+      {/* Booking */}
       <section className="section-padding bg-surface">
-        <div className="container-basis max-w-2xl">
-          <div className="bg-white rounded-card shadow-card p-10 text-center">
-            <h2 className="text-2xl font-bold mb-3">Reserveer de vergaderruimte</h2>
-            <p className="text-muted mb-2 text-sm">
-              Binnenkort kunt u hier direct online reserveren.
-            </p>
-            <p className="text-muted mb-8 text-sm">
-              Voor nu: neem telefonisch of per mail contact op — we reageren binnen één werkdag.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href={`tel:${contact.telefoonRaw}`}
-                className="inline-flex items-center justify-center px-6 py-3 bg-primary rounded-btn font-medium text-sm hover:bg-primary-hover transition-colors"
-              >
-                ☎ {contact.telefoon}
-              </a>
-              <a
-                href={`mailto:${contact.email}`}
-                className="inline-flex items-center justify-center px-6 py-3 border border-black rounded-btn font-medium text-sm hover:bg-black hover:text-white transition-colors"
-              >
-                ✉ {contact.email}
-              </a>
-            </div>
-          </div>
+        <div className="container-basis">
+          <h2 className="text-2xl font-bold mb-2 text-center">Reserveer de vergaderruimte</h2>
+          <p className="text-sm text-muted text-center mb-2">
+            Kies een dagdeel en boek direct online.
+          </p>
+          <p className="text-sm text-center mb-8 bg-white border border-black/10 rounded-card px-4 py-3 max-w-xl mx-auto">
+            <strong>Huurder van de Basis?</strong> De 50% huurderkorting wordt verrekend op de factuur.
+          </p>
+          <CalBooking />
         </div>
       </section>
 
