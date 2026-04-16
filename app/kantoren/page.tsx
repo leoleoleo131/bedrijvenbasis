@@ -119,7 +119,7 @@ export default function KantorenPage() {
             <li className="flex items-start gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
               <span>
-                <strong>Jaarcontract — meest gekozen.</strong> Zekerheid voor beide partijen en na een jaar maandelijks opzegbaar met 3 maanden opzegtermijn. Bij de grootste units of meerdere units wordt een passend voorstel op maat gemaakt.
+                <strong>Jaarcontract — meest gekozen.</strong> Zekerheid en na een jaar maandelijks opzegbaar met 3 maanden opzegtermijn. Bij de grootste units of meerdere units wordt een passend voorstel op maat gemaakt.
               </span>
             </li>
             <li className="flex items-start gap-2">
