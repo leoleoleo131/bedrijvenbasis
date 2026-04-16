@@ -148,8 +148,8 @@ export default function OverDeBasisPage() {
           </div>
           <div className="relative h-64 md:h-80 rounded-card overflow-hidden">
             <Image
-              src="/images/WhatsApp-Image-2025-09-18-at-10.52.17-11.jpeg"
-              alt="Interieur de Basis"
+              src="/images/pand.webp"
+              alt="Bedrijfsverzamelgebouw de Basis Leeuwarden"
               fill
               className="object-cover"
             />
