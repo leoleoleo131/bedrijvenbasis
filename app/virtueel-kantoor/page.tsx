@@ -153,11 +153,6 @@ export default function VirtueelKantoorPage() {
               </div>
             ))}
           </div>
-          <div className="mt-6 max-w-4xl mx-auto">
-            <div className="bg-white rounded-card p-4 text-sm text-muted border border-black/10">
-              <strong className="text-black">Post doorsturen?</strong> Wil je je fysieke post ook per post nagestuurd krijgen? Dat is mogelijk als meerprijs van <strong>€20/mnd</strong> bovenop je gekozen plan.
-            </div>
-          </div>
         </div>
       </section>
 
