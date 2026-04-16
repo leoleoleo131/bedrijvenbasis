@@ -13,17 +13,17 @@ export default function LogoCarousel() {
     <section className="py-12 bg-surface overflow-hidden">
       <div className="container-basis mb-6">
         <p className="text-center text-sm font-medium text-muted uppercase tracking-wider">
-          Meer dan 25 bedrijven kozen voor de Basis
+          Meer dan 20 bedrijven gekozen voor de Basis
         </p>
       </div>
 
       {/* Carousel */}
       <div className="relative">
-        <div className="flex gap-12 animate-scroll w-max">
+        <div className="flex gap-16 animate-scroll w-max">
           {logos.map((h, i) => (
             <div
               key={`${h.naam}-${i}`}
-              className="relative h-14 w-36 flex-shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
+              className="relative h-16 w-44 flex-shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
             >
               <Image src={h.logo} alt={h.naam} fill className="object-contain" />
             </div>
