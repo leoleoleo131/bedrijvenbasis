@@ -35,6 +35,7 @@ export default function Footer() {
             <li>{contact.adres}</li>
             <li>{contact.postcode} {contact.stad}</li>
             <li><a href={`tel:${contact.telefoonRaw}`} className="hover:text-white">{contact.telefoon}</a></li>
+            <li><a href={contact.whatsappUrl} className="hover:text-white">WhatsApp: {contact.whatsapp}</a></li>
             <li><a href={`mailto:${contact.email}`} className="hover:text-white">{contact.email}</a></li>
           </ul>
         </div>

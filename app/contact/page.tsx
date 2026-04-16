@@ -33,11 +33,15 @@ export default function ContactPage() {
 
                 <div>
                   <p className="font-medium mb-1">Telefoon</p>
-                  <a
-                    href={`tel:${contact.telefoonRaw}`}
-                    className="text-muted hover:text-black transition-colors"
-                  >
+                  <a href={`tel:${contact.telefoonRaw}`} className="text-muted hover:text-black transition-colors">
                     {contact.telefoon}
+                  </a>
+                </div>
+
+                <div>
+                  <p className="font-medium mb-1">WhatsApp</p>
+                  <a href={contact.whatsappUrl} className="text-muted hover:text-black transition-colors">
+                    {contact.whatsapp}
                   </a>
                 </div>
 
