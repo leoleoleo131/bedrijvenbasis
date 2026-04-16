@@ -72,7 +72,7 @@ export default function ContactPage() {
         <div className="container-basis">
           <div className="rounded-card overflow-hidden shadow-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.7!2d5.8167!3d53.2015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8ffe7b3e4a34d%3A0x1a2b3c4d5e6f7890!2sMr.%20P.J.%20Troelstraweg%20149%2C%208919%20AA%20Leeuwarden!5e0!3m2!1snl!2snl!4v1700000000000!5m2!1snl!2snl"
+              src="https://maps.google.com/maps?q=Mr.+P.J.+Troelstraweg+149,+8919+AA+Leeuwarden,+Nederland&hl=nl&z=16&output=embed"
               width="100%"
               height="380"
               style={{ border: 0 }}

@@ -1,21 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     unoptimized: true,
-  },
-  async redirects() {
-    return [
-      {
-        source: '/dagkantoor',
-        destination: '/kantoren',
-        permanent: true,
-      },
-      {
-        source: '/dagkantoor/',
-        destination: '/kantoren/',
-        permanent: true,
-      },
-    ]
   },
 }
 
