@@ -23,7 +23,7 @@ export default function LogoCarousel() {
           {logos.map((h, i) => (
             <div
               key={`${h.naam}-${i}`}
-              className="relative h-16 w-44 flex-shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
+              className="relative h-24 w-56 flex-shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
             >
               <Image src={h.logo} alt={h.naam} fill className="object-contain" />
             </div>
