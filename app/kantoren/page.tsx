@@ -23,10 +23,10 @@ const usps = [
 ]
 
 const kantoorfotoGrid = [
-  { src: '/images/office_1.jpg', alt: 'Kantoorruimte de Basis Leeuwarden' },
-  { src: '/images/office_2.jpg', alt: 'Werkruimte de Basis Leeuwarden' },
-  { src: '/images/grid/grid3.webp', alt: 'Kantoor de Basis interieur' },
-  { src: '/images/grid/grid4.webp', alt: 'Werkplek de Basis' },
+  { src: '/images/kantoor-2.webp', alt: 'Kantoorruimte de Basis Leeuwarden' },
+  { src: '/images/kantoor-3.webp', alt: 'Kantoor interieur de Basis' },
+  { src: '/images/kantoor-4.webp', alt: 'Werkruimte de Basis' },
+  { src: '/images/kantoor-5.webp', alt: 'Werkplek de Basis Leeuwarden' },
 ]
 
 const faqItems = [
