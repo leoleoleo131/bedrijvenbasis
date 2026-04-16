@@ -18,13 +18,15 @@ export default function HuurderPage() {
           <p className="text-muted max-w-xl mb-12">
             Meer dan 20 bedrijven — van IT tot marketing, van coaches tot consultants — zijn thuis op de Basis.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {actief.map(h => (
-              <div key={h.naam} className="flex flex-col items-center gap-3">
-                <div className="relative h-16 w-full">
-                  <Image src={h.logo} alt={h.naam} fill className="object-contain grayscale hover:grayscale-0 transition-[filter] duration-200" />
-                </div>
-                <span className="text-sm font-medium text-center">{h.naam}</span>
+              <div key={h.naam} className="relative h-24 w-full overflow-hidden">
+                <Image
+                  src={h.logo}
+                  alt={h.naam}
+                  fill
+                  className="object-contain transition-transform duration-300 hover:scale-110"
+                />
               </div>
             ))}
           </div>
