@@ -14,7 +14,7 @@ const waarden = [
   },
   {
     titel: 'Flexibiliteit',
-    tekst: 'Je situatie verandert, je kantoorsituatie ook. Maandelijks opzegbare contracten.',
+    tekst: 'Je situatie verandert, je kantoorsituatie ook. Naast jaarcontracten bieden wij ook flexibele contracten die maandelijks opzegbaar zijn.',
   },
   {
     titel: 'Community',
@@ -22,7 +22,7 @@ const waarden = [
   },
   {
     titel: 'Kwaliteit',
-    tekst: 'Modern, schoon, goed onderhouden. Je verdient het.',
+    tekst: 'Snel contact en meldingen worden altijd direct opgepakt. Goed onderhouden, compleet gerenoveerd en verduurzaamd pand met eigen conciërge.',
   },
   {
     titel: 'Betaalbaarheid',
@@ -46,7 +46,7 @@ const onderscheid = [
   },
   {
     titel: 'Echt all-in-één',
-    tekst: 'Snelle glasvezel WiFi, energie (stroom + verwarming), gemeentelijke heffingen, schoonmaak van alle algemene ruimtes en toiletten, servicekosten en beheer — alles inbegrepen. Geen verrassingen, geen extra facturen.',
+    tekst: 'Energie (stroom + verwarming), gemeentelijke heffingen, schoonmaak van alle algemene ruimtes en toiletten, servicekosten en beheer — alles inbegrepen. Geen verrassingen, geen extra facturen.',
   },
   {
     titel: 'Modern en duurzaam',
