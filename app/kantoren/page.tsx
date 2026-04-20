@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import UnitsGrid from '@/components/home/UnitsGrid'
 import ContactCta from '@/components/home/ContactCta'
 import Faq from '@/components/ui/Faq'
@@ -56,25 +55,9 @@ const faqItems = [
   },
   {
     vraag: 'Kan ik ook de vergaderruimte gebruiken als kantoorhuurder?',
-    antwoord: (
-      <>
-        Jazeker! Als kantoorhuurder reserveer je de{' '}
-        <Link href="/vergaderruimte/" className="underline hover:text-black transition-colors">
-          vergaderruimte
-        </Link>{' '}
-        gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs.
-        Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training
-        wil organiseren of met je team wil vergaderen. Je combineert zo een betaalbare vaste werkplek
-        met een professionele vergaderzaal wanneer je die nodig hebt.
-      </>
-    ),
+    antwoord: 'Jazeker! Als kantoorhuurder reserveer je de vergaderruimte (bedrijvenbasis.nl/vergaderruimte) gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs. Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training wil organiseren of met je team wil vergaderen. Je combineert zo een betaalbare vaste werkplek met een professionele vergaderzaal wanneer je die nodig hebt.',
   },
 ]
-
-const faqSchemaTexts: Record<string, string> = {
-  'Kan ik ook de vergaderruimte gebruiken als kantoorhuurder?':
-    'Jazeker! Als kantoorhuurder reserveer je de vergaderruimte gewoon via de website — en op de factuur krijg je automatisch 50% korting op de normale prijs. Super handig als je een klein kantoor hebt maar af en toe klanten wil ontvangen, een training wil organiseren of met je team wil vergaderen.',
-}
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -82,10 +65,7 @@ const faqSchema = {
   mainEntity: faqItems.map(item => ({
     '@type': 'Question',
     name: item.vraag,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faqSchemaTexts[item.vraag] ?? (typeof item.antwoord === 'string' ? item.antwoord : ''),
-    },
+    acceptedAnswer: { '@type': 'Answer', text: item.antwoord },
   })),
 }
 
