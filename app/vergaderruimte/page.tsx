@@ -126,8 +126,11 @@ export default function VergaderruimtePage() {
           <p className="text-sm text-muted text-center mb-2">
             Kies een dagdeel en boek direct online.
           </p>
-          <p className="text-sm text-center mb-8 bg-white border border-black/10 rounded-card px-4 py-3 max-w-xl mx-auto">
+          <p className="text-sm text-center bg-white border border-black/10 rounded-card px-4 py-3 max-w-xl mx-auto">
             <strong>Huurder van de Basis?</strong> De 50% huurderkorting wordt verrekend op de factuur.
+          </p>
+          <p className="text-sm text-center text-muted mb-8 max-w-xl mx-auto mt-2">
+            Prijzen zijn excl. btw.
           </p>
           <CalBooking />
         </div>
