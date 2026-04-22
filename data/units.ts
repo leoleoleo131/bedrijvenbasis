@@ -30,7 +30,7 @@ export const units: Unit[] = [
     naam: 'Unit 7',
     oppervlakte: 50,
     prijs: 795,
-    status: 'beschikbaar',
+    status: 'verhuurd',
     verdieping: 'begane-grond',
     omschrijving: 'Ruime kantoorunit met veel mogelijkheden — ideaal voor een team.',
     faciliteiten: ['Internet/WiFi', 'Veel lichtinval', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang'],
