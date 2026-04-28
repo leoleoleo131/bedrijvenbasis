@@ -47,9 +47,19 @@ export default function CalBooking() {
   }, [])
 
   return (
-    <div
-      id="cal-booking"
-      style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-    />
+    <div className="relative">
+      <div
+        id="cal-booking"
+        style={{ width: '100%', height: '700px', overflow: 'scroll' }}
+      />
+      <style>{`
+        a[href^="https://cal.com"]:not([href*="debasis"]),
+        a[href^="https://app.cal.com"],
+        .cal-embed-badge,
+        [data-testid="cal-embed-badge"] {
+          display: none !important;
+        }
+      `}</style>
+    </div>
   )
 }
