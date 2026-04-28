@@ -9,11 +9,7 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_URL
-    if (!endpoint) {
-      setState('error')
-      return
-    }
+    const endpoint = 'https://formspree.io/f/xlgaggpq'
 
     setState('submitting')
     const data = new FormData(e.currentTarget)
