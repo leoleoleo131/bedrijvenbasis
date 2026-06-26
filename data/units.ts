@@ -30,10 +30,10 @@ export const units: Unit[] = [
     naam: 'Unit 6',
     oppervlakte: 23,
     prijs: 525,
-    status: 'beschikbaar',
+    status: 'verhuurd',
     verdieping: 'begane-grond',
-    omschrijving: 'Ruime kantoorunit met uitstekende lichtinval — beschikbaar vanaf 1 juli 2026. Perfect voor 1-2 personen die comfortabel willen werken.',
-    faciliteiten: ['Internet/WiFi', 'Veel lichtinval', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang', 'Beschikbaar vanaf 1 juli 2026'],
+    omschrijving: 'Ruime kantoorunit met uitstekende lichtinval — perfect voor 1-2 personen die comfortabel willen werken.',
+    faciliteiten: ['Internet/WiFi', 'Veel lichtinval', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang'],
     personen: '1-2 personen',
   },
   {
