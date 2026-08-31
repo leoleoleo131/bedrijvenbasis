@@ -14,7 +14,7 @@ export default function UnitCard({ unit, onClick }: Props) {
     >
       <div className="flex justify-between items-start">
         <h3 className="font-semibold text-base">{unit.naam}</h3>
-        <Badge status={unit.status} />
+        <Badge status={unit.status} beschikbaarVanaf={unit.beschikbaarVanaf} />
       </div>
       <div className="flex flex-wrap gap-3 text-sm text-muted">
         <span>{unit.oppervlakte} m²</span>

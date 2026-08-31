@@ -26,7 +26,7 @@ export default function UnitModal({ unit, onClose }: Props) {
         </button>
         <div className="flex justify-between items-start mb-2">
           <h2 className="text-xl font-semibold">{unit.naam}</h2>
-          <Badge status={unit.status} />
+          <Badge status={unit.status} beschikbaarVanaf={unit.beschikbaarVanaf} />
         </div>
         <div className="flex gap-4 text-sm text-muted mb-4">
           <span>{unit.oppervlakte} m²</span>

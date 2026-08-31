@@ -11,6 +11,7 @@ export type Unit = {
   faciliteiten: string[]
   personen: string
   foto?: string
+  beschikbaarVanaf?: string
 }
 
 export const units: Unit[] = [
@@ -68,6 +69,7 @@ export const units: Unit[] = [
     omschrijving: 'Prettige kantoorruimte met goede lichtinval en rustige ligging. Beschikbaar per 1 november.',
     faciliteiten: ['Internet/WiFi', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang'],
     personen: '1-2 personen',
+    beschikbaarVanaf: 'Per 1 november',
   },
   {
     id: 'unit-14',
@@ -90,6 +92,7 @@ export const units: Unit[] = [
     omschrijving: 'Ruime kantoorruimte vooraan in het pand met een eigen keuken en veel raampartijen. Dit is de eerste ruimte die je vanaf de Troelstraweg ziet. Beschikbaar per 1 april 2027, in overleg eventueel eerder of later.',
     faciliteiten: ['Eigen keuken', 'Veel lichtinval', 'Eigen airco voor verwarmen en koelen', 'Internet/WiFi', 'Gratis parkeren', '24/7 toegang'],
     personen: '6-10 personen',
+    beschikbaarVanaf: 'Per april 2027',
   },
   {
     id: 'unit-19',
@@ -101,6 +104,7 @@ export const units: Unit[] = [
     omschrijving: 'Praktische vierkante kantoorruimte, centraal aan de voorkant van het pand. De lichtkoepel in het dak zorgt voor natuurlijk daglicht. Beschikbaar rond 1 april 2027, in overleg eventueel eerder of later.',
     faciliteiten: ['Lichtkoepel', 'Eigen airco voor verwarmen en koelen', 'Internet/WiFi', 'Gratis parkeren', '24/7 toegang'],
     personen: '2-4 personen',
+    beschikbaarVanaf: 'Per april 2027',
   },
   {
     id: 'unit-23',
@@ -123,5 +127,6 @@ export const units: Unit[] = [
     omschrijving: 'Mooie kantoorruimte op de bovenverdieping met veel lichtinval en ruim uitzicht. Beschikbaar per 1 november. De huurprijs is €450 per maand exclusief btw.',
     faciliteiten: ['Internet/WiFi', 'Veel lichtinval', 'Uitzicht', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang'],
     personen: '1-2 personen',
+    beschikbaarVanaf: 'Per 1 november',
   },
 ]

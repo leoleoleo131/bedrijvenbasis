@@ -12,6 +12,7 @@ const config: Config = {
         'muted-mid': '#999999',
         surface: '#F5F5F5',
         available: '#22C55E',
+        upcoming: '#F59E0B',
         rented: '#9CA3AF',
       },
       fontFamily: {
