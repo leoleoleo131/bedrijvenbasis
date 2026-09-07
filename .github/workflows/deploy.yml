@@ -3,6 +3,11 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
+  # Wekelijks herbouwen zodat blogs die in Supabase op 'gepubliceerd' zijn gezet
+  # op de site landen (dinsdag 06:00 UTC, na de maandagse blog-cron + review).
+  schedule:
+    - cron: '0 6 * * 2'
+  workflow_dispatch:
 
 jobs:
   deploy:
