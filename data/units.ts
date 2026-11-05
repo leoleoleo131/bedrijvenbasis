@@ -129,4 +129,16 @@ export const units: Unit[] = [
     personen: '1-2 personen',
     beschikbaarVanaf: 'Per 1 november',
   },
+  {
+    id: 'unit-31',
+    naam: 'Unit 31',
+    oppervlakte: 26,
+    prijs: 550,
+    status: 'beschikbaar',
+    verdieping: 'begane-grond',
+    omschrijving: 'Kantoorruimte met het mooiste uitzicht van alle units, direct op de Troelstraweg. Beschikbaar per 1 februari 2027 voor €550 per maand all-inclusive.',
+    faciliteiten: ['Internet/WiFi', 'Veel lichtinval', 'Uitzicht op de Troelstraweg', 'Gemeubileerd beschikbaar', 'Gratis parkeren', '24/7 toegang'],
+    personen: '1-2 personen',
+    beschikbaarVanaf: 'Per 1 februari 2027',
+  },
 ]
