@@ -98,7 +98,7 @@ export const units: Unit[] = [
     id: 'unit-19',
     naam: 'Unit 19',
     oppervlakte: 34,
-    prijs: 425,
+    prijs: 475,
     status: 'beschikbaar',
     verdieping: 'begane-grond',
     omschrijving: 'Praktische vierkante kantoorruimte, centraal aan de voorkant van het pand. De lichtkoepel in het dak zorgt voor natuurlijk daglicht. Beschikbaar rond 1 april 2027, in overleg eventueel eerder of later.',
