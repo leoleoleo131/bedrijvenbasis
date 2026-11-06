@@ -86,7 +86,7 @@ export const units: Unit[] = [
     id: 'unit-18',
     naam: 'Unit 18',
     oppervlakte: 80,
-    prijs: 1200,
+    prijs: 1275,
     status: 'beschikbaar',
     verdieping: 'begane-grond',
     omschrijving: 'Ruime kantoorruimte vooraan in het pand met een eigen keuken en veel raampartijen. Dit is de eerste ruimte die je vanaf de Troelstraweg ziet. Beschikbaar per 1 april 2027, in overleg eventueel eerder of later.',
